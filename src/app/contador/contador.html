@@ -1,0 +1,21 @@
+<h1>{{ titulo }}</h1>
+
+<img [src]="linkAngular" alt="Logo" width="50">
+
+<div style="margin: 20px 0;">
+  <p>Contagem: <strong>{{ valor }}</strong></p>
+  
+  <button (click)="clicou('soma')">Aumentar (+)</button>
+  <button (click)="clicou('subtrai')">Diminuir (-)</button>
+</div>
+
+<p *ngIf="valor < 0" style="color: red;">
+  O valor está negativo!
+</p>
+
+<hr>
+
+<h3>Histórico de Atividades:</h3>
+<ul>
+  <li *ngFor="let acao of historico">{{ acao }}</li>
+</ul>
