@@ -1,4 +1,3 @@
-Atividade Prática - Angular
 Este projeto demonstra a aplicação dos conceitos básicos do Angular através de um componente de contador.
 
 Conceitos Aplicados:
